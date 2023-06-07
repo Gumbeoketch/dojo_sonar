@@ -2,10 +2,10 @@
 
 git clone https://github.com/DefectDojo/django-DefectDojo
 cd django-DefectDojo
-# building
-bash dc-build.sh
 
-# running
+#building
+bash dc-build.sh
+#running
 bash dc-up.sh
 
 #go to http://localhost:8080 on your browser
@@ -18,7 +18,6 @@ docker run -d -p 9000:9000 sonarqube
 #admin:admin and you will be prompted for new password
 #under account>security generate user token/login key
 #under project generate project token/key
-
 #Request for Sonar Project Key Token
 read -p "Enter Project Key : " projectkey
 echo "$projectkey"
